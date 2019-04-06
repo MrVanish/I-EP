@@ -3,11 +3,10 @@ import sys
 import os
 
 def iCanDoStep(last,arr):
-    switch = False
     for i in arr:
         if last[0] == i[0] or last[1] == i[1]:
-            switch = True
-    return switch
+            return True
+    return False
 
         
 player = [ ["7","♠"],["7","♦"],
